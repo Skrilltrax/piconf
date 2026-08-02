@@ -25,6 +25,7 @@ folder containing a `SKILL.md`. No settings entries required.
 |------|--------|
 | [badlogic/pi-skills](https://github.com/badlogic/pi-skills) | brave-search, browser-tools, gccli, gdcli, gmcli, transcribe, vscode, youtube-transcript |
 | [anthropics/skills](https://github.com/anthropics/skills) | docx, pdf, pptx, xlsx + creative/dev/enterprise examples |
+| [obra/superpowers](https://github.com/obra/superpowers) | systematic-debugging, test-driven-development, requesting/receiving-code-review, using-git-worktrees, writing-skills, planning, verification |
 
 > **Security:** skills can instruct the model to run arbitrary commands and may
 > ship executables. Review the source of anything you clone before trusting it.

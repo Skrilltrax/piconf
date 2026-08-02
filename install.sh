@@ -46,8 +46,9 @@ clone_or_update() {
   ok "$(basename "$dest") ready at $dest"
 }
 
-clone_or_update "https://github.com/badlogic/pi-skills.git" "$SKILLS_DIR/pi-skills"
-clone_or_update "https://github.com/anthropics/skills.git"  "$SKILLS_DIR/anthropic-skills"
+clone_or_update "https://github.com/badlogic/pi-skills.git"  "$SKILLS_DIR/pi-skills"
+clone_or_update "https://github.com/anthropics/skills.git"   "$SKILLS_DIR/anthropic-skills"
+clone_or_update "https://github.com/obra/superpowers.git"     "$SKILLS_DIR/superpowers"
 
 # --- 3. Done ---
 cat <<EOF
@@ -58,8 +59,9 @@ Next steps:
   pi config          # enable/disable resources
 
 Installed skill repos:
-  $SKILLS_DIR/pi-skills
-  $SKILLS_DIR/anthropic-skills
+  $SKILLS_DIR/pi-skills        (brave-search, browser-tools, google APIs, transcribe, vscode)
+  $SKILLS_DIR/anthropic-skills (docx/pdf/pptx/xlsx + creative/dev examples)
+  $SKILLS_DIR/superpowers      (debugging, TDD, code review, planning, git worktrees)
 
 Cloned somewhere other than ~/.piconf? Edit the skills/extensions/prompts/themes
 paths in $REPO_DIR/settings.json, then re-run this script.
