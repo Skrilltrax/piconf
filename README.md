@@ -26,6 +26,8 @@ folder containing a `SKILL.md`. No settings entries required.
 | [badlogic/pi-skills](https://github.com/badlogic/pi-skills) | brave-search, browser-tools, gccli, gdcli, gmcli, transcribe, vscode, youtube-transcript |
 | [anthropics/skills](https://github.com/anthropics/skills) | docx, pdf, pptx, xlsx + creative/dev/enterprise examples |
 | [obra/superpowers](https://github.com/obra/superpowers) | systematic-debugging, test-driven-development, requesting/receiving-code-review, using-git-worktrees, writing-skills, planning, verification |
+| [android/skills](https://github.com/android/skills) | Google official: Compose adaptive/migration/styles, navigation-3, edge-to-edge, perfetto, R8, intent security, AGP, camera, wear |
+| [chrisbanes/skills](https://github.com/chrisbanes/skills) | deep Compose (state, recomposition, stability, side-effects, slot API) + Kotlin (coroutines, flows, value classes, KMP) |
 
 > **Security:** skills can instruct the model to run arbitrary commands and may
 > ship executables. Review the source of anything you clone before trusting it.
