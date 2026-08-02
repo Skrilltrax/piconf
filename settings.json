@@ -1,6 +1,5 @@
 {
   "$schema": "https://pi.dev/schema/settings.json",
-  "_comment": "Symlinked to ~/.pi/agent/settings.json by install.sh. Adjust paths if you cloned elsewhere.",
 
   "defaultProvider": "zai",
   "defaultModel": "glm-5.2",
@@ -29,11 +28,6 @@
   "enabledModels": ["claude-*", "gpt-4o", "gemini-2*", "glm-*"],
 
   "enableSkillCommands": true,
-
-  "skills": ["~/.piconf/skills"],
-  "extensions": ["~/.piconf/extensions"],
-  "prompts": ["~/.piconf/prompts"],
-  "themes": ["~/.piconf/themes"],
 
   "packages": []
 }

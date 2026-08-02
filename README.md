@@ -35,26 +35,23 @@ folder containing a `SKILL.md`. No settings entries required.
 ## Install
 
 ```bash
-git clone <this-repo> ~/.piconf   # or anywhere you like
-cd ~/.piconf
+git clone <this-repo> ~/piconf   # clone anywhere you like
+cd ~/piconf
 ./install.sh
 ```
 
-`install.sh` will:
-1. Back up any existing `~/.pi/agent/settings.json` and `~/.pi/agent/AGENTS.md`.
-2. Symlink this repo's `settings.json` and `AGENTS.md` into `~/.pi/agent/`.
-3. Clone (or update) the two standard skill repos into `~/.pi/agent/skills/`.
-4. Print next steps.
+`install.sh` is location-independent. It will:
+1. Back up any existing `~/.pi/agent/{settings.json,AGENTS.md,extensions,prompts,themes}`.
+2. Symlink this repo's `settings.json`, `AGENTS.md`, and the `extensions`/`prompts`/`themes` dirs into `~/.pi/agent/` (pi auto-discovers all four resource types — no path config needed).
+3. Clone (or update) the five skill repos into `~/.pi/agent/skills/`.
+4. Symlink each hand-written skill from `skills/` into `~/.pi/agent/skills/`.
+5. Print next steps.
 
 Then start pi:
 
 ```bash
 pi
 ```
-
-> If you cloned somewhere other than `~/.piconf`, edit the `skills`,
-> `extensions`, `prompts`, and `themes` paths in `settings.json` to match, then
-> re-run `install.sh`.
 
 ## Optional community packages
 
@@ -76,12 +73,12 @@ Browse more at the [package gallery](https://pi.dev/packages) (search keyword
 ## Update
 
 ```bash
-cd ~/.piconf && git pull && ./install.sh        # this repo + skill repos
+cd ~/piconf && git pull && ./install.sh        # this repo + skill repos
 pi update --all                                     # pi CLI + installed packages
 ```
 
 ## Files you'll want to edit
 
-- `settings.json` — provider, model, theme, paths.
+- `settings.json` — provider, model, theme, packages.
 - `AGENTS.md` — how you want the agent to behave globally.
 - `skills/` etc. — drop in your own resources; they load automatically.
